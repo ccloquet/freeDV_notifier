@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FreeDV QSO Notifier</title>
+<meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://qso.freedv.org/socket.io/socket.io.js"></script>
+
+<script>var socket = io.connect("http://qso.freedv.org/");
+
+socket.on('updatechat', function(username, data) 
+{
+	console.log(Date.now(), username, data)
+	var token   = 'YOUR API KEY';
+	var user    = 'YOUR USER NAME';
+	var url     = "https://api.pushover.net/1/messages.json"
+	var data    = {
+			    "token": 	token,
+			    "user": 	user,
+			    "message": 	"freeDV" + username,
+			    "sound":	"intermission" }
+	$.post(url, data)
+})
+
+
+</script>
+
+</head>
+
+<body>
+<center>freeDV QSO notifier</center>
+</body>
+</html>
