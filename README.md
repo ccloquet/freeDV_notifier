@@ -1,5 +1,7 @@
 # freeDV_notifier
-Receive a push notification when there is activity on the freeDV QSO finder - quick and dirty serverless/client-based script
+Receive a push notification when there is activity on the freeDV QSO finder - quick and dirty serverless/client-based script.
+
+I found this useful to increase the chance of successful QSO with this mode.
 
 Based upon the work of K7VE's [QSO Finder](http://qso.freedv.org) for [freeDV](https://freedv.org).
 
@@ -13,3 +15,4 @@ Notes:
 
 TODO: add filters (eg: only receive the connect events, or the QSY on certain bands), add a server part to subscribe without the need to run it in your browser, ...
 
+Tell me in the issues if this is a useful feature, so I can improve it if needed.
