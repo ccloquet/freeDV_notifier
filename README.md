@@ -1,5 +1,5 @@
 # freeDV_notifier
-A client-based script to receive a push notification when there is activity on the freeDV QSO finder - quick and dirty
+Receive a push notification when there is activity on the freeDV QSO finder - quick and dirty serverless/client-based script
 
 Based upon the work of K7VE's [QSO Finder](http://qso.freedv.org) for [freeDV](https://freedv.org).
 
@@ -11,5 +11,5 @@ Notes:
  - you might need to reload the page if you exit the browser. 
  - only use it locally. *Do not* put it on a server as it contains your credentials
 
-TODO: add filters (eg: only receive the connect events, or the QSY on certain bands)
+TODO: add filters (eg: only receive the connect events, or the QSY on certain bands), add a server part to subscribe without the need to run it in your browser, ...
 
